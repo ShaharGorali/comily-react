@@ -1,13 +1,236 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  font-family: 'Righteous', cursive;
+}
+.scrSpace {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(9, 77, 124);
+  background: linear-gradient(
+    4deg,
+    rgba(9, 77, 124, 1) 0%,
+    rgba(8, 9, 17, 1) 100%
+  );
+}
+.mainSpace {
+  height: 90vh;
+  width: 100vw;
+}
+.headerSpace {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* background-color: #1C315E; */
+}
+.signInLink{
+  width: 10vw;
+}
+.navSpace {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.headerItem {
+  text-decoration: none;
+  color: rgb(113, 109, 103);
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+  cursor: pointer;
+  margin-top: 8px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+  cursor: pointer;
+  width: 50%;
+}
+.profile {
+  color: antiquewhite;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  right: 10%;
+  top: 8px;
+}
+.signInSpace {
+  height: 90vh;
+  width: 100vw;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.signInForm {
+  /* width:30vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  color: antiquewhite;
+  font-size: 30px;
+}
+.signInp{
+  width: 30vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.signInHeader {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: rgb(113, 109, 103);
+
+}
+.toSignUp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: antiquewhite;
+}
+.mainHeader {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Righteous", cursive;
+  color: rgb(113, 109, 103);
+}
+.formSpace {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formSpace2 {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 30%;
+  /* width: 20%; */
+}
+.commentsSpace {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#commentLabel{
+  color: antiquewhite;
+}
+.commentDiv {
+  min-height: 40%;
+  min-width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px;
+  background: rgb(35, 99, 144);
+  background: linear-gradient(
+    4deg,
+    rgba(35, 99, 144, 1) 74%,
+    rgba(8, 9, 17, 1) 100%
+  );
+}
+.commentDiv:hover {
+  box-shadow: 2px 2px 15px;
+  background: rgb(144, 35, 87);
+  background: linear-gradient(
+    4deg,
+    rgba(144, 35, 87, 1) 40%,
+    rgba(8, 9, 17, 1) 100%
+  );
+}
+.submitBtn{
+  color: rgb(113, 109, 103);
+  background-color: black;  
+  border-radius: 8%;
+  cursor: pointer;
+  border: none;
+  font-size: 30px;
+  width: 15vw;
+}
+.submitBtn:hover{
+  color: black;
+  background-color: rgb(194, 191, 191);
+  width: 16vw;
+}
+#submitBtn1{
+  color: rgb(113, 109, 103);
+  background-color: black;  
+  border-radius: 8%;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  width: 10vw;
+}
+#submitBtn1:hover{
+  color: black;
+  background-color: rgb(194, 191, 191);
+  width: 11vw;
+}
+#submitCom{
+  margin-left: 8px;
+}
+.names{
+  color: rgb(178, 255, 223);
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+  right: 30px;
 }
